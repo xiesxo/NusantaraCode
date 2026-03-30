@@ -21,7 +21,7 @@ export default function SectionWrapper({
     <section
       id={id}
       className={`py-20 md:py-28 ${
-        dark ? 'bg-surface-900 text-white' : 'bg-surface-950 text-white'
+        dark ? 'bg-surface-950 text-white' : 'bg-surface-950 text-white'
       } ${className}`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

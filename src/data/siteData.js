@@ -79,7 +79,7 @@ export const PROGRAMS_DATA = [
     description:
       'Program pelatihan intensif 12 minggu yang mencakup Full-Stack Web Development, Mobile Development, dan Data Science dengan kurikulum berbasis industri.',
     icon: 'Code2',
-    color: 'from-indigo-500 to-blue-500',
+    color: 'from-[#1D546D] to-[#5F9598]',
     features: ['Kurikulum industri', 'Mentorship 1-on-1', 'Sertifikat'],
   },
   {
@@ -88,7 +88,7 @@ export const PROGRAMS_DATA = [
     description:
       'Workshop mingguan yang membahas teknologi terkini seperti AI/ML, Cloud Computing, DevOps, dan Blockchain dengan pembicara dari industri.',
     icon: 'Lightbulb',
-    color: 'from-amber-500 to-orange-500',
+    color: 'from-[#5F9598] to-[#7aacaf]',
     features: ['Hands-on practice', 'Expert speakers', 'Free access'],
   },
   {
@@ -97,7 +97,7 @@ export const PROGRAMS_DATA = [
     description:
       'Kompetisi inovasi tahunan yang mempertemukan developer, designer, dan entrepreneur untuk membangun solusi teknologi berdampak sosial.',
     icon: 'Trophy',
-    color: 'from-emerald-500 to-teal-500',
+    color: 'from-[#0e3347] to-[#5F9598]',
     features: ['Total hadiah Rp100jt', '48 jam tantangan', 'Networking'],
   },
   {
@@ -106,7 +106,7 @@ export const PROGRAMS_DATA = [
     description:
       'Program bimbingan karir selama 6 bulan dengan mentor profesional dari perusahaan teknologi terkemuka di Indonesia dan Asia.',
     icon: 'Users',
-    color: 'from-purple-500 to-pink-500',
+    color: 'from-[#2a6a7e] to-[#7aacaf]',
     features: ['100+ mentor', 'Career guidance', 'Portfolio review'],
   },
   {
@@ -115,7 +115,7 @@ export const PROGRAMS_DATA = [
     description:
       'Kolaborasi pengembangan proyek open-source yang berdampak bagi komunitas developer dan masyarakat Indonesia secara luas.',
     icon: 'GitBranch',
-    color: 'from-cyan-500 to-blue-500',
+    color: 'from-[#1D546D] to-[#4a7a7d]',
     features: ['20+ projects', 'Global impact', 'Contribution guide'],
   },
   {
@@ -124,7 +124,7 @@ export const PROGRAMS_DATA = [
     description:
       'Pertemuan rutin komunitas di berbagai kota untuk berbagi ilmu, pengalaman, dan membangun koneksi antar developer.',
     icon: 'MessageCircle',
-    color: 'from-rose-500 to-red-500',
+    color: 'from-[#5F9598] to-[#1D546D]',
     features: ['15 kota', 'Monthly events', 'Networking'],
   },
 ];
