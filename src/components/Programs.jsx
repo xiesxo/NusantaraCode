@@ -37,7 +37,7 @@ export default function Programs() {
 
           return (
             <ScrollReveal key={program.id} animation="fade-up" delay={idx * 100}>
-              <div className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-surface-200/60 bg-white shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary-500/10">
+              <div className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-surface-200/10 bg-surface-900/80 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary-500/10">
                 {/* Gradient accent top */}
                 <div
                   className={`h-1.5 bg-gradient-to-r ${program.color}`}
@@ -57,10 +57,10 @@ export default function Programs() {
                   </div>
 
                   {/* Title & Description */}
-                  <h3 className="mb-3 text-xl font-bold text-surface-900">
+                  <h3 className="mb-3 text-xl font-bold text-white">
                     {program.title}
                   </h3>
-                  <p className="mb-6 flex-1 text-sm leading-relaxed text-surface-800/60">
+                  <p className="mb-6 flex-1 text-sm leading-relaxed text-surface-200/60">
                     {program.description}
                   </p>
 
@@ -69,7 +69,7 @@ export default function Programs() {
                     {program.features.map((feature) => (
                       <span
                         key={feature}
-                        className="rounded-full bg-surface-100 px-3 py-1 text-xs font-medium text-surface-800/70"
+                        className="rounded-full bg-surface-800/80 px-3 py-1 text-xs font-medium text-surface-200/70"
                       >
                         {feature}
                       </span>
@@ -79,7 +79,7 @@ export default function Programs() {
                   {/* CTA */}
                   <button
                     type="button"
-                    className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-primary-600 transition-colors hover:text-primary-700"
+                    className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-primary-400 transition-colors hover:text-primary-300"
                   >
                     Pelajari Selengkapnya
                     <ArrowRight

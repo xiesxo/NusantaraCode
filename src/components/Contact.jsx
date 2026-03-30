@@ -43,7 +43,7 @@ export default function Contact() {
   );
 
   const inputBaseClass =
-    'w-full rounded-xl border border-surface-200/80 bg-surface-50/50 px-4 py-3 text-sm text-surface-800 placeholder-surface-800/40 outline-none transition-all focus:border-primary-400 focus:ring-2 focus:ring-primary-400/20';
+    'w-full rounded-xl border border-surface-200/10 bg-surface-800/50 px-4 py-3 text-sm text-surface-200 placeholder-surface-200/40 outline-none transition-all focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20';
 
   return (
     <SectionWrapper
@@ -62,22 +62,22 @@ export default function Contact() {
                 return (
                   <div
                     key={item.label}
-                    className="group flex items-start gap-4 rounded-2xl border border-surface-200/60 bg-white p-5 shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:shadow-primary-500/10"
+                    className="group flex items-start gap-4 rounded-2xl border border-surface-200/10 bg-surface-900/80 p-5 shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:shadow-primary-500/10"
                   >
                     <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-r from-primary-500 to-accent-400 text-white shadow-lg">
                       <IconComp size={22} />
                     </div>
                     <div>
-                      <p className="text-sm font-semibold text-surface-900">{item.label}</p>
+                      <p className="text-sm font-semibold text-white">{item.label}</p>
                       {item.href ? (
                         <a
                           href={item.href}
-                          className="text-sm text-surface-800/60 transition-colors hover:text-primary-500"
+                          className="text-sm text-surface-200/60 transition-colors hover:text-primary-400"
                         >
                           {item.value}
                         </a>
                       ) : (
-                        <p className="text-sm text-surface-800/60">{item.value}</p>
+                        <p className="text-sm text-surface-200/60">{item.value}</p>
                       )}
                     </div>
                   </div>
@@ -86,11 +86,11 @@ export default function Contact() {
             </div>
 
             {/* Map placeholder */}
-            <div className="mt-8 overflow-hidden rounded-2xl border border-surface-200/60 bg-white shadow-lg">
-              <div className="flex h-48 items-center justify-center bg-gradient-to-br from-primary-50 to-accent-400/10">
+            <div className="mt-8 overflow-hidden rounded-2xl border border-surface-200/10 bg-surface-900/80 shadow-lg">
+              <div className="flex h-48 items-center justify-center bg-gradient-to-br from-surface-800 to-primary-900/30">
                 <div className="text-center">
                   <MapPin size={32} className="mx-auto text-primary-400" />
-                  <p className="mt-2 text-sm font-medium text-surface-800/50">
+                  <p className="mt-2 text-sm font-medium text-surface-200/50">
                     Jakarta Selatan, Indonesia
                   </p>
                 </div>
@@ -102,13 +102,13 @@ export default function Contact() {
         {/* Contact form */}
         <div className="lg:col-span-3">
           <ScrollReveal animation="slide-right">
-            <div className="rounded-2xl border border-surface-200/60 bg-white p-8 shadow-xl lg:p-10">
-              <h3 className="mb-6 text-xl font-bold text-surface-900">
+            <div className="rounded-2xl border border-surface-200/10 bg-surface-900/80 p-8 shadow-xl lg:p-10">
+              <h3 className="mb-6 text-xl font-bold text-white">
                 Kirim Pesan
               </h3>
 
               {submitted && (
-                <div className="mb-6 flex items-center gap-3 rounded-xl bg-emerald-50 border border-emerald-200 p-4 text-sm text-emerald-700 animate-fade-in">
+                <div className="mb-6 flex items-center gap-3 rounded-xl bg-emerald-500/10 border border-emerald-500/30 p-4 text-sm text-emerald-400 animate-fade-in">
                   <CheckCircle size={20} />
                   Pesan Anda berhasil terkirim! Kami akan segera menghubungi Anda.
                 </div>
@@ -117,7 +117,7 @@ export default function Contact() {
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div className="grid gap-5 sm:grid-cols-2">
                   <div>
-                    <label htmlFor="contact-name" className="mb-1.5 block text-sm font-medium text-surface-800">
+                    <label htmlFor="contact-name" className="mb-1.5 block text-sm font-medium text-surface-200">
                       Nama Lengkap
                     </label>
                     <input
@@ -132,7 +132,7 @@ export default function Contact() {
                     />
                   </div>
                   <div>
-                    <label htmlFor="contact-email" className="mb-1.5 block text-sm font-medium text-surface-800">
+                    <label htmlFor="contact-email" className="mb-1.5 block text-sm font-medium text-surface-200">
                       Email
                     </label>
                     <input
@@ -149,7 +149,7 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="contact-subject" className="mb-1.5 block text-sm font-medium text-surface-800">
+                  <label htmlFor="contact-subject" className="mb-1.5 block text-sm font-medium text-surface-200">
                     Subjek
                   </label>
                   <input
@@ -165,7 +165,7 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="contact-message" className="mb-1.5 block text-sm font-medium text-surface-800">
+                  <label htmlFor="contact-message" className="mb-1.5 block text-sm font-medium text-surface-200">
                     Pesan
                   </label>
                   <textarea

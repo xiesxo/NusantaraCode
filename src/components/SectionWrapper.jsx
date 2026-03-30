@@ -21,7 +21,7 @@ export default function SectionWrapper({
     <section
       id={id}
       className={`py-20 md:py-28 ${
-        dark ? 'bg-surface-900 text-white' : 'bg-white'
+        dark ? 'bg-surface-900 text-white' : 'bg-surface-950 text-white'
       } ${className}`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -30,7 +30,7 @@ export default function SectionWrapper({
             {title && (
               <h2
                 className={`text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl ${
-                  dark ? 'text-white' : 'text-surface-900'
+                  dark ? 'text-white' : 'text-white'
                 }`}
               >
                 {title}
@@ -39,7 +39,7 @@ export default function SectionWrapper({
             {subtitle && (
               <p
                 className={`mx-auto mt-4 max-w-2xl text-lg ${
-                  dark ? 'text-surface-200/80' : 'text-surface-800/60'
+                  dark ? 'text-surface-200/80' : 'text-surface-200/70'
                 }`}
               >
                 {subtitle}

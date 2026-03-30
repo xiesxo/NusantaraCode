@@ -59,7 +59,7 @@ export default function Navbar() {
     <header
       className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'glass border-b border-surface-200/50 shadow-lg shadow-surface-900/5'
+          ? 'glass-dark border-b border-surface-200/10 shadow-lg shadow-black/20'
           : 'bg-transparent'
       }`}
     >
@@ -73,7 +73,7 @@ export default function Navbar() {
           <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-primary-500 to-accent-400 font-bold text-white shadow-lg shadow-primary-500/30 transition-transform group-hover:scale-105">
             NC
           </div>
-          <span className="text-xl font-bold text-surface-900">
+          <span className="text-xl font-bold text-white">
             {ORG_INFO.name}
           </span>
         </a>
@@ -87,8 +87,8 @@ export default function Navbar() {
                 onClick={(e) => handleNavClick(e, link.href)}
                 className={`relative rounded-lg px-4 py-2 text-sm font-medium transition-colors ${
                   activeSection === link.href
-                    ? 'text-primary-600'
-                    : 'text-surface-800/70 hover:text-primary-600'
+                    ? 'text-primary-400'
+                    : 'text-surface-200/70 hover:text-primary-400'
                 }`}
               >
                 {link.label}
@@ -113,7 +113,7 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => setIsOpen(!isOpen)}
-          className="rounded-lg p-2 text-surface-800 transition-colors hover:bg-surface-100 md:hidden"
+          className="rounded-lg p-2 text-white transition-colors hover:bg-surface-800 md:hidden"
           aria-label={isOpen ? 'Tutup menu' : 'Buka menu'}
           aria-expanded={isOpen}
         >
@@ -135,7 +135,7 @@ export default function Navbar() {
 
         {/* Menu panel */}
         <div
-          className={`absolute right-0 top-0 h-auto w-full max-w-sm transform rounded-b-2xl bg-white p-6 shadow-2xl transition-transform duration-300 ${
+          className={`absolute right-0 top-0 h-auto w-full max-w-sm transform rounded-b-2xl bg-surface-900 border border-surface-200/10 p-6 shadow-2xl transition-transform duration-300 ${
             isOpen ? 'translate-y-0' : '-translate-y-full'
           }`}
         >
@@ -147,8 +147,8 @@ export default function Navbar() {
                   onClick={(e) => handleNavClick(e, link.href)}
                   className={`block rounded-xl px-4 py-3 text-base font-medium transition-colors ${
                     activeSection === link.href
-                      ? 'bg-primary-50 text-primary-600'
-                      : 'text-surface-800/70 hover:bg-surface-50 hover:text-primary-600'
+                      ? 'bg-primary-500/10 text-primary-400'
+                      : 'text-surface-200/70 hover:bg-surface-800 hover:text-primary-400'
                   }`}
                 >
                   {link.label}
